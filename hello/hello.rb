@@ -9,3 +9,8 @@ get '/frank' do
   name = 'Frank'
   "Hello #{name}"
 end
+
+get '/:name' do
+  name = params[:name]
+  "Howdy #{name}!"
+end
