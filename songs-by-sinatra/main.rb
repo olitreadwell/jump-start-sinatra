@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 
 get '/' do
+  @title = "Songs by Sinatra"
   erb :home
 end
 
