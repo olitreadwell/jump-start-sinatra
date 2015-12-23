@@ -1,6 +1,8 @@
+#REQUIREMENTS
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
+#ROUTES
 get '/' do
   @title = "Songs by Sinatra"
   erb :home
