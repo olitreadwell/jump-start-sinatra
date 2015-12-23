@@ -22,5 +22,6 @@ get '/contact' do
 end
 
 not_found do
+  @title = "404"
   erb :not_found
 end
