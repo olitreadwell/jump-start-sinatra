@@ -39,5 +39,8 @@ __END__
 </body>
 </html>
 
-@@home
-<p>Welcome to this website all about the songs of the great Frank Sinatra</p>
+@@about
+<p>This site is a demonstration of how to build a website using Sinatra.</p>
+
+@@contact
+<p>You can contact me by sending an email to daz at gmail.com</p>
