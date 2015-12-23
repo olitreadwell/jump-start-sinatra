@@ -7,9 +7,11 @@ get '/' do
 end
 
 get '/about' do
+  @title = "About this Site"
   erb :about
 end
 
 get '/contact' do
+  @title = "Contact Us"
   erb :contact
 end
