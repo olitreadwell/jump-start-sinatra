@@ -1,5 +1,6 @@
 #REQUIREMENTS
 require 'sinatra'
+require 'slim'
 require 'sinatra/reloader' if development?
 
 #CONFIGURATION
@@ -8,20 +9,20 @@ set :public_folder, 'assets'
 #ROUTES
 get '/' do
   @title = "Songs by Sinatra"
-  erb :home
+  slim :home
 end
 
 get '/about' do
   @title = "About this Site"
-  erb :about
+  slim :about
 end
 
 get '/contact' do
   @title = "Contact Us"
-  erb :contact
+  slim :contact
 end
 
 not_found do
   @title = "404"
-  erb :not_found
+  slim :not_found
 end
