@@ -20,3 +20,7 @@ get '/contact' do
   @title = "Contact Us"
   erb :contact
 end
+
+not_found do
+  erb :not_found
+end
