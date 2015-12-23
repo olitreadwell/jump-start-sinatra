@@ -2,6 +2,9 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
+#CONFIGURATION
+set :public_folder, 'assets'
+
 #ROUTES
 get '/' do
   @title = "Songs by Sinatra"
