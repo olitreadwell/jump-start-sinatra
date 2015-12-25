@@ -1,5 +1,5 @@
 #REQUIREMENTS
-require 'sinatra/reloader' if development?
+require 'sinatra/reloader'
 require 'sinatra'
 require 'slim'
 
