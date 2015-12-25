@@ -2,6 +2,9 @@
 require 'sinatra/reloader'
 require 'sinatra'
 require 'slim'
+require 'sass'
+
+get('/styles.css'){ scss :styles }
 
 #CONFIGURATION
 set :public_folder, 'assets'
