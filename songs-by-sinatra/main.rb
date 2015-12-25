@@ -8,6 +8,7 @@ set :public_folder, 'assets'
 
 #ROUTES
 get '/' do
+  @title = "Songs by Sinatra"
   slim :home
 end
 
