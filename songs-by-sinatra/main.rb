@@ -3,6 +3,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sass'
 require 'slim'
+require './song'
 
 #STYLES
 get('/styles.css'){ scss :styles }
