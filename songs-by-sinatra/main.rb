@@ -1,9 +1,10 @@
 #REQUIREMENTS
-require 'sinatra/reloader'
 require 'sinatra'
-require 'slim'
+require 'sinatra/reloader'
 require 'sass'
+require 'slim'
 
+#STYLES
 get('/styles.css'){ scss :styles }
 
 #CONFIGURATION
