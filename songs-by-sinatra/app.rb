@@ -5,10 +5,10 @@ require 'sass'
 require 'slim'
 
 #ROUTES
-require './routes'
+require_relative "routes/main.rb"
 
 #MODELS
-require './song'
+require_relative "models/main.rb"
 
 #CONFIGURATION
 require './config'
