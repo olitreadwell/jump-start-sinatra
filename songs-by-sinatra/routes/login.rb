@@ -12,3 +12,8 @@ post '/login' do
     slim :login
   end
 end
+
+get '/logout' do
+  session.clear
+  redirect to('/login')
+end
