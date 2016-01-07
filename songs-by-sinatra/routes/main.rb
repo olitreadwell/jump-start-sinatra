@@ -1,5 +1,6 @@
 require_relative "menu_items"
 require_relative "login"
+require_relative "song"
 
 #ROOT
 get '/' do
