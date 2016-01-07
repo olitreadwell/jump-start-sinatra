@@ -1,6 +1,6 @@
 #REQUIREMENTS
 require 'sinatra'
-require 'sinatra/reloader'
+# require 'sinatra-contrib'
 require 'sass'
 require 'slim'
 
