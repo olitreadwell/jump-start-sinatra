@@ -1,3 +1,10 @@
+#REQUIREMENTS
+require 'sinatra'
+require 'sinatra/reloader'
+require 'sass'
+require 'slim'
+
+
 #ROUTES
 require_relative "routes/main.rb"
 
