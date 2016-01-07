@@ -5,6 +5,12 @@ require 'sass'
 require 'slim'
 require './song'
 
+configure do
+  enable :sessions
+  set :username, 'frank'
+  set :password, 'sinatra'
+end
+
 #STYLES
 get('/styles.css'){ scss :styles }
 
@@ -30,4 +36,8 @@ end
 not_found do
   @title = "404"
   slim :not_found
+end
+
+get '/login' do
+  slim :login
 end
