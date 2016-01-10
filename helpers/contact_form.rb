@@ -18,7 +18,3 @@ def send_message
   )
 
 end
-
-def none_of_your_business
-  "no really none of your business'
-end

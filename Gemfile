@@ -8,6 +8,8 @@ gem 'slim'
 gem 'dm-core'
 gem 'dm-migrations'
 gem "thin"
+gem "pony"
+gem "sinatra-flash"
 
 #PRODUCTION
 gem "pg",                  :group => :production
