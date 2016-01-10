@@ -1,4 +1,5 @@
 require_relative "song"
+require_relative "contact_form"
 
 helpers do
 
