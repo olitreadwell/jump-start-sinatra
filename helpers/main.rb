@@ -1,3 +1,5 @@
+require_relative "song"
+
 helpers do
 
   def css(*stylesheets)

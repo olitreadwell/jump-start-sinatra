@@ -1,16 +1,16 @@
 get '/songs' do
-  @songs = Song.all
+  @songs = find_songs
   slim :songs
 end
 
 get '/songs/new' do
   halt(401, "Not Authorized") unless session[:admin]
-  @song = Song.new
+  @song = create_song
   slim :new_song
 end
 
 get '/songs/:id' do
-  @song = Song.get(params[:id])
+  @song = find_song
   slim :show_song
 end
 
@@ -20,17 +20,17 @@ post '/songs' do
 end
 
 get '/songs/:id/edit' do
-  @song = Song.get(params[:id])
+  @song = find_song
   slim :edit_song
 end
 
 put '/songs/:id' do
-  song = Song.get(params[:id])
+  song = find_song
   song.update(params[:song])
   redirect to ("/songs/#{song.id}")
 end
 
 delete '/songs/:id' do
-  Song.get(params[:id]).destroy
+  find_song.destroy
   redirect to('/songs')
 end
