@@ -16,6 +16,7 @@ end
 
 post '/songs' do
   song = Song.create(params[:song])
+  flash[:notice] = "Song succesfully added" if create_song
   redirect to ("/songs/#{song.id}")
 end
 
@@ -26,11 +27,15 @@ end
 
 put '/songs/:id' do
   song = find_song
-  song.update(params[:song])
+  if song.update(params[:song])
+    flash[:notice] = "Song successfully updated"
+  end
   redirect to ("/songs/#{song.id}")
 end
 
 delete '/songs/:id' do
-  find_song.destroy
+  if find_song.destroy
+    flash[:notice] = "Song deleted"
+  end
   redirect to('/songs')
 end

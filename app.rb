@@ -4,6 +4,7 @@ require 'sass'
 require 'slim'
 require 'dm-core'
 require 'dm-migrations'
+require 'sinatra/flash'
 
 configure :development do
  require 'sinatra/reloader'
