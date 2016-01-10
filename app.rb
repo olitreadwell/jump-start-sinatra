@@ -14,6 +14,10 @@ configure :production do
   DataMapper.setup(:default, ENV['DATABASE_URL'])
 end
 
+before do
+  set_title
+end
+
 #ROUTES
 require_relative "routes/main.rb"
 
