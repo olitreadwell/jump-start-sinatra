@@ -6,4 +6,7 @@ helpers do
     end.join
   end
 
+  def current?(path='/')
+    (request.path==path || request.path==path+'/') ? "current" : nil
+  end
 end
