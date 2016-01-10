@@ -21,7 +21,3 @@ configure :production do
       :email_password  => ENV['SENDGRID_PASSWORD']
       :email_domain    => 'heroku.com'
 end
-
-def none_of_your_business
-  
-end
