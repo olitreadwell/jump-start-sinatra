@@ -1,0 +1,6 @@
+require 'sass'
+require 'slim'
+require 'dm-core'
+require 'dm-migrations'
+require 'sinatra/flash'
+require 'pony'
